@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    display: block;
+    background-color: #a892ee;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+.expense-controls{
+    display:flex ;
+    flex-wrap: wrap;
+    gap: 1rem;
+    text-align: left;
+}
+.expense-control{
+    display:block ;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.expense-controls label{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.expense-controls input{
+    display: block;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+}
+.expense-actions{
+    text-align: right;
+}
+.expense-actions button{
+    font: inherit;
+    font-weight:500;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+.ResultExpense{
+    padding: 1rem;
+    background-color: rgb(31, 31, 31);
+    margin: 2rem auto;
+    border-radius: 10px;
+    width: 50rem;
+    max-width: 95%;
+}
+.filter{
+color: #fff;
+display: flex;
+justify-content: space-between;
+margin: 16px 0;
+align-items: center;
+}
+.filter select{
+    font: inherit;
+    padding: 0.5rem 3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+/* =======DATE========= */
+.expense-list{
+    list-style: none;
+    padding: 0;
+}
+.card.expense-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #4b4b4b;
+    border-radius: 10px;
+
+}
+.expense-date{
+        display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #ececec;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.expense-date-month{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.expense-date-year{
+    font-size: 1rem;
+}
+.expense-date-day{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.expense-item-desc{
+    color: #fff;
+    flex: 1 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+.expense-item-desc h2 {
+    margin: 0 20px 0 20px;
+}
+.expense-item-desc div{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    background-color: #40005d;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
